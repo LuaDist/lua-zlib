@@ -1,0 +1,19 @@
+--- This file is part of LuaDist project
+
+name = "lua-zlib"
+version = "0.2"
+
+desc = "Lua 5.1 interface to zlib"
+author = "Brian Maher"
+url = "https://github.com/brimworks/lua-zlib"
+license = "MIT/X11"
+maintainer = "Peter Drahoš"
+
+depends = {
+	"lua ~> 5.1",
+	"zlib >=1.2.3"
+}
+
+conflicts = {
+  "lzlib"
+}
