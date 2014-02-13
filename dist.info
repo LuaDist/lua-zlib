@@ -1,0 +1,37 @@
+author = "Brian Maher"
+url = "https://github.com/brimworks/lua-zlib"
+maintainer = "Peter Drahoš"
+desc = "Lua 5.1 interface to zlib"
+depends = {
+[[lua ~> 5.1]],
+[[zlib >=1.2.3]],
+}
+
+files = {
+Runtime = {
+[[lib/lua/zlib.so]],
+}
+,
+Test = {
+[[share/lua-zlib/test/tap.lua]],
+[[share/lua-zlib/test/test.lua]],
+[[share/lua-zlib/test/amnon_david.gz]],
+[[share/lua-zlib/test/tom_macwright.gz]],
+[[share/lua-zlib/test/tom_macwright.out]],
+}
+,
+Data = {
+[[share/lua-zlib/README]],
+}
+,
+}
+
+version = "0.2"
+arch = "Darwin"
+type = "x86_64"
+license = "MIT/X11"
+conflicts = {
+[[lzlib]],
+}
+
+name = "lua-zlib"
